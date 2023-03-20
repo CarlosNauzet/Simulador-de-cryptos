@@ -3,4 +3,5 @@ from . import app
 
 @app.route('/')
 def inicio():
-    return 'Nauzet va a crear un API para el proyecto de fin de bootcamp'
+    return (f'La ruta del archivo de datos es: {app.config["RUTA"]}<br>'
+            f'Secret key: {app.config["SECRET_KEY"]}')
